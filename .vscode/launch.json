@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SolivrosApplication<solivros>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.solivros.solivros.SolivrosApplication",
+            "projectName": "solivros",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
