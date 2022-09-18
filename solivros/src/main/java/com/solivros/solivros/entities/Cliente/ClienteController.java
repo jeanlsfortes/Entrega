@@ -1,7 +1,8 @@
 package com.solivros.solivros.entities.Cliente;
 
 import java.util.List;
-import java.util.Optional;
+
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -41,12 +42,12 @@ public class ClienteController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Cliente salvar(@RequestBody Cliente cliente){
+    public Cliente salvar(@Valid @RequestBody Cliente cliente){
         return clienteRepository.save(cliente);
     }
 
     @PutMapping
-    public ResponseEntity<Cliente>  editar(@PathVariable Long id, @RequestBody Cliente cliente){
+    public ResponseEntity<Cliente>  editar(@Valid @PathVariable Long id, @RequestBody Cliente cliente){
         if(clienteRepository.existsById(id)){
             cliente.setId(id);
             cliente = clienteRepository.save(cliente);
