@@ -1,6 +1,8 @@
 package com.solivros.solivros.exceptionhandler;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -16,6 +18,10 @@ public class ApiExeptionHandler extends ResponseEntityExceptionHandler{
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
             MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
+        List<Erro.Campo> campos = new ArrayList<>();
+    
+        //for ()
+
         Erro erro = new Erro();
         erro.setStatus(status.value());
         erro.setDataHora(LocalDateTime.now());
