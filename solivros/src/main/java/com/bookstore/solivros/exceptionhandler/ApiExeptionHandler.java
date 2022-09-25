@@ -1,9 +1,8 @@
-package com.solivros.solivros.exceptionhandler;
+package com.bookstore.solivros.exceptionhandler;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;

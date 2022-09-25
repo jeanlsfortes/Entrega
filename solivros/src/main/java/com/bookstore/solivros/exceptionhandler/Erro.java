@@ -1,4 +1,4 @@
-package com.solivros.solivros.exceptionhandler;
+package com.bookstore.solivros.exceptionhandler;
 
 import java.time.LocalDateTime;
 import java.util.List;

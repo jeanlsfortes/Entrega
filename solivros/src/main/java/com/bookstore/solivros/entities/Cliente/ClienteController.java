@@ -1,4 +1,4 @@
-package com.solivros.solivros.entities.Cliente;
+package com.bookstore.solivros.entities.Cliente;
 
 import java.util.List;
 
@@ -27,7 +27,7 @@ public class ClienteController {
 
     @Autowired
     private ClienteRepository clienteRepository;
-    
+
     @GetMapping
     public List<Cliente> listarClientes(){
         return clienteRepository.findAll();

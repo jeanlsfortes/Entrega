@@ -1,4 +1,4 @@
-package com.solivros.solivros.entities.Cliente;
+package com.bookstore.solivros.entities.Cliente;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

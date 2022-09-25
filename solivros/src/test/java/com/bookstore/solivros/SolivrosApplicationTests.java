@@ -1,4 +1,4 @@
-package com.solivros.solivros;
+package com.bookstore.solivros;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

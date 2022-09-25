@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SolivrosApplication",
+            "request": "launch",
+            "mainClass": "com.bookstore.solivros.SolivrosApplication",
+            "projectName": "solivros"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-SolivrosApplication<solivros>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
